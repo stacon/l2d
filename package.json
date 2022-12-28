@@ -4,8 +4,8 @@
   "name": "l2d",
   "displayName": "L2D",
   "description": "Provides the ability to link filepath segment or code segments with external urls though VSCode lens.",
-  "icon": "images/l2dIcon.png",
-  "repository": "https://github.com/stacon/documentation-lens-vs-code-extension",
+  "icon": "https://github.com/stacon/l2d/blob/develop/images/l2dIcon.png",
+  "repository": "https://github.com/stacon/l2d",
   "version": "1.0.0",
   "engines": {
     "vscode": "^1.74.0"

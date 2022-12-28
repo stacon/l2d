@@ -4,7 +4,7 @@
 
 ## Features
 
-Based on given configuration extension will provide links on lens for related documentation
+Based on given configuration extension will provide links on lens for related documentation.
 
 ## Requirements
 
@@ -52,21 +52,9 @@ A configuration file at the top level named `l2d.config.json` will provide the a
 }
 ```
 
-## Extension Settings
-
--
-
-## Known Issues
-
--
-
-## Release Notes
-
--
-
 ### 1.0.0
 
-Initial release of ...
+Initial release of L2D
 
 ## Following extension guidelines
 

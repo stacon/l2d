@@ -2,6 +2,6 @@
 
 All notable changes to the "L2D" extension will be documented in this file.
 
-## [Unreleased]
+## v1.0.0
 
 - Initial release

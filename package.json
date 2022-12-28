@@ -2,7 +2,7 @@
   "author": "Constantinos Stathis",
   "publisher": "Constantinos Stathis",
   "name": "l2d",
-  "displayName": "L2D",
+  "displayName": "L2D (Link to Documentation)",
   "description": "Provides the ability to link filepath segment or code segments with external urls though VSCode lens.",
   "icon": "images/l2dIcon.png",
   "repository": "https://github.com/stacon/l2d",

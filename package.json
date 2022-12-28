@@ -11,6 +11,7 @@
     "vscode": "^1.74.0"
   },
   "categories": [
+    "Programming Languages",
     "Other"
   ],
   "activationEvents": [

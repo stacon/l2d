@@ -19,13 +19,13 @@ Connect codebase with documentation easily
 
 Based on your file name or file path segment you can provide links on File level
 
-<img src="https://raw.githubusercontent.com/stacon/l2d/develop--v.1.0.2/images/readme/app-vue-example.png" alt="">
+<img src="https://raw.githubusercontent.com/stacon/l2d/main/images/readme/app-vue-example.png" alt="">
 
 _Image #1_
 
 This can be achieved through the following configuration `l2d.config.json`
 
-<img src="https://raw.githubusercontent.com/stacon/l2d/develop--v.1.0.2/images/readme/first-config-example.png" alt="">
+<img src="https://raw.githubusercontent.com/stacon/l2d/main/images/readme/first-config-example.png" alt="">
 
 _Image #2_
 
@@ -44,7 +44,7 @@ The configuration file must be at the top project level and should be named `l2d
 ### Breakdown
 
 The following image represents a l2d configuration file
-<img src="https://raw.githubusercontent.com/stacon/l2d/develop--v.1.0.2/images/readme/second-config-example.png" alt="">
+<img src="https://raw.githubusercontent.com/stacon/l2d/main/images/readme/second-config-example.png" alt="">
 
 _Image #3_
 

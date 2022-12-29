@@ -3,7 +3,7 @@
   "publisher": "stacon",
   "name": "l2d",
   "displayName": "L2D (Link to Documentation)",
-  "description": "Provides the ability to link filepath segment or code segments with external urls though VSCode lens.",
+  "description": "Connect codebase in VSCode with documentation easily",
   "icon": "images/l2dIcon.png",
   "repository": "https://github.com/stacon/l2d",
   "version": "1.0.1",
@@ -11,8 +11,7 @@
     "vscode": "^1.74.0"
   },
   "categories": [
-    "Programming Languages",
-    "Other"
+    "Programming Languages"
   ],
   "activationEvents": [
     "onStartupFinished"

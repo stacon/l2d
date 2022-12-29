@@ -21,7 +21,7 @@ A configuration file at the top level named `l2d.config.json` will provide the a
     // language identifiers as the one bellow for VueJS contain filepathSegment and document keys.
     "vue": {
       // Filepath segment lensing will occur if the given matcher like App.vue exists in the filepath name. Multiple matchers can be added
-      "filepathSegment": {
+      "filepathSegments": {
         "App.vue": {
           // link is the redirection link that will be provided on the lens action
           "link": "https://vuejs.org/guide/essentials/application.html",
@@ -29,7 +29,7 @@ A configuration file at the top level named `l2d.config.json` will provide the a
           "description": "Create Vue App"
         }
       },
-      // Document matchers attempt to find words or regex provided as keys and will create lens above the first occurence in the document
+      // Document segment matchers attempt to find words or regex provided as keys and will create lens above the first occurence in the document
       "document": {
         "debounce": {
           "link": "https://vuejs.org/api/sfc-script-setup.html#useslots-useattrs",
@@ -38,7 +38,7 @@ A configuration file at the top level named `l2d.config.json` will provide the a
       }
     },
     "javascript": {
-      "filepathSegment": {
+      "filepathSegments": {
         "src/store/modules/": {
           "link": "https://vuex.vuejs.org/",
           "description": "VueX"

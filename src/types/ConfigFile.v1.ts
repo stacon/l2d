@@ -11,8 +11,8 @@ export type ConfigFile = {
   };
   matchers: {
     [languageId: string]: {
-      filepathSegment: MatcherSet;
-      document: MatcherSet;
+      filepathSegments: MatcherSet;
+      documentSegments: MatcherSet;
     };
   };
 };

@@ -1,6 +1,9 @@
 # Change Log
 
-All notable changes to the "L2D" extension will be documented in this file.
+## v1.0.2
+
+- Updated documentation (hopefully better)
+- **BREAKING:** New configuration (there are no installs yet)
 
 ## v1.0.1
 

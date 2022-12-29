@@ -4,21 +4,21 @@
   },
   "matchers": {
     "vue": {
-      "filepathSegment": {
+      "filepathSegments": {
         "App.vue": {
           "link": "https://vuejs.org/guide/essentials/application.html",
           "description": "Create Vue App"
         }
       },
-      "document": {
-        "debounce": {
+      "documentSegments": {
+        "useSlots": {
           "link": "https://vuejs.org/api/sfc-script-setup.html#useslots-useattrs",
           "description": "more about useSlots"
         }
       }
     },
     "javascript": {
-      "filepathSegment": {
+      "filepathSegments": {
         "src/store/modules/": {
           "link": "https://vuex.vuejs.org/",
           "description": "VueX"
@@ -28,7 +28,7 @@
           "description": "Vue Unit Testing Guide"
         }
       },
-      "document": {
+      "documentSegments": {
         "describe(": {
           "link": "https://jestjs.io/docs/api#describename-fn",
           "description": "describe grouping function"

@@ -20,15 +20,16 @@ export class CodelensProvider implements CodeLensProvider {
   private codeLenses: CodeLens[] = [];
   private _onDidChangeCodeLenses: EventEmitter<void> = new EventEmitter<void>();
   private filepathSegmentMatchers: MatcherSet = {};
-  private documentMatchers: MatcherSet = {};
+  private documentSegmentMatchers: MatcherSet = {};
 
   public readonly onDidChangeCodeLenses: Event<void> =
     this._onDidChangeCodeLenses.event;
 
   constructor(private config: ConfigFile, private languageId: string) {
     this.filepathSegmentMatchers =
-      this.config.matchers[this.languageId].filepathSegment;
-    this.documentMatchers = this.config.matchers[this.languageId].document;
+      this.config.matchers[this.languageId].filepathSegments;
+    this.documentSegmentMatchers =
+      this.config.matchers[this.languageId].documentSegments;
 
     workspace.onDidChangeConfiguration((_) => {
       this._onDidChangeCodeLenses.fire();
@@ -50,7 +51,7 @@ export class CodelensProvider implements CodeLensProvider {
   }
 
   private provideDocumentLevelCodeLenses(document: TextDocument) {
-    const matchers = Object.keys(this.documentMatchers);
+    const matchers = Object.keys(this.documentSegmentMatchers);
     const documentText = document.getText();
 
     if (!documentHasMatcherOccurencies(documentText, matchers)) return;
@@ -73,11 +74,12 @@ export class CodelensProvider implements CodeLensProvider {
         );
 
         if (range) {
-          const link = this.documentMatchers[codeMatcher].link;
+          const link = this.documentSegmentMatchers[codeMatcher].link;
           this.codeLenses.push(
             codelens(
               range,
-              this.documentMatchers[codeMatcher].description || codeMatcher,
+              this.documentSegmentMatchers[codeMatcher].description ||
+                codeMatcher,
               link
             )
           );
